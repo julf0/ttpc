@@ -1,18 +1,18 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
-  <title>テトパフェチャレンジ84</title>
-  <!-- 外部 css 読込 -->
+  <title>Desafío Perfect Clear 84 de Tetris</title>
+  <!-- Carga de CSS externo -->
   <link href="ttt.css" rel="stylesheet" type="text/css">
-  <!-- 詳細動作については各 js ファイルをご参照ください -->
+  <!-- Para detalles sobre el funcionamiento, consulta los archivos JS -->
   <script type="text/javascript" src="jsgmod.js"></script>
   <script type="text/javascript" src="data.js"></script>
   <script type="text/javascript" src="problemData.js"></script>
   <script type="text/javascript" src="problem.js"></script>
   <script type="text/javascript" src="ttt.js"></script>
   <!--
-  ■メモ
-  ・(特になし)
+  ■Nota
+  ・(Nada en particular)
 -->
 </head>
 <body onLoad="Execute()">
@@ -20,140 +20,138 @@
 
     <div id="list_sections" class="layer">
       <p id="title">
-        TETRIS Perfect Clear Challenge<br>
+        Desafío Perfect Clear de Tetris<br>
         テトリス　パフェチャレンジ
       </p>
 
       <p>
-        対戦テトリスのテンプレ「開幕パーフェクトクリア」を極めたい！<br>
-        という方向けの講座です。<br>
-        840通りのツモの内、パーフェクトクリアが可能な711通りのツモを<br>
-        実際に<b>自分で動かしながら練習する</b>ことができます。<br>
+        ¡Este es un curso para aquellos que quieren dominar el "Perfect Clear de apertura" en el Tetris moderno!<br>
+        Puedes practicar 711 de las 840 posibles secuencias de piezas que permiten un Perfect Clear,<br>
+        <b>moviendo las piezas tú mismo</b>.<br>
       </p>
       <p>
-        <b>答えが分からない場合は"R"を押してください。</b>ガイドが現れます。<br>
-        本講座で紹介するパターンとパフェ成功率の関係は<a href="TetrisPerfectClear.xlsx">ここ</a>を参照してください。
+        <b>Si no sabes la respuesta, presiona "R".</b> Aparecerá una guía.<br>
+        La relación entre los patrones presentados en este curso y la tasa de éxito de Perfect Clear se puede consultar <a href="TetrisPerfectClear.xlsx">aquí</a>.
       </p>
 
       <p>
-        <input type="button" value="キー設定" onClick="gButton='preferences'">
+        <input type="button" value="Configuración de teclas" onClick="gButton='preferences'">
       </p>
       <p>
-        ・キー設定は Cookie でセーブされます。<br>
-        ・ミノの動きが速くなりすぎたらリロードしてみてください。<br>
-        ・ミノの動きがカクつくようでしたらリロードしてみてください。<br>
+        ・La configuración de teclas se guarda en Cookies.<br>
+        ・Si las piezas se mueven demasiado rápido, intenta recargar la página.<br>
+        ・Si el movimiento de las piezas se siente entrecortado, intenta recargar la página.<br>
       </p>
       <!
-      --セクションを編集した場合は data.js の SectionTitle にも反映してください-->
+      --Si editas una sección, asegúrate de actualizar SectionTitle en data.js-->
       <p>
-        はじめに<br>
-        <input type="button" value="1  テンプレを組んでみよう[ガイドあり]" onClick="gButton='section1'">
+        Introducción<br>
+        <input type="button" value="1  Intenta armar la plantilla [Con guía]" onClick="gButton='section1'">
         <img src="img/clear.png" class="clear" id="clear0"><br>
       </p>
 
       <p>
-        Iミノ縦置き 61％<br>
-        <input type="button" value="2  「Iミノ縦置き」 14パターン [ガイドあり]" onClick="gButton='section2'">
+        Pieza I vertical 61％<br>
+        <input type="button" value="2  «Pieza I vertical» 14 patrones [Con guía]" onClick="gButton='section2'">
         <img src="img/clear.png" class="clear" id="clear1"><br>
-        <input type="button" value="3  「Iミノ縦置き」 20問" onClick="gButton='section3'">
+        <input type="button" value="3  «Pieza I vertical» 20 preguntas" onClick="gButton='section3'">
         <img src="img/clear.png" class="clear" id="clear2"><br>
       </p>
 
       <p>
-        Iミノ横置き 84％<br>
-        <input type="button" value="4  「初手 I ミノ１段目型」 6パターン [ガイドあり]" onClick="gButton='section4'">
+        Pieza I horizontal 84％<br>
+        <input type="button" value="4  «Primer movimiento I en la primera línea» 6 patrones [Con guía]" onClick="gButton='section4'">
         <img src="img/clear.png" class="clear" id="clear3"><br>
 
-        <input type="button" value="5  「初手 I ミノ１段目型」 20問" onClick="gButton='section5'">
+        <input type="button" value="5  «Primer movimiento I en la primera línea» 20 preguntas" onClick="gButton='section5'">
         <img src="img/clear.png" class="clear" id="clear4"><br>
 
-        <input type="button" value="6  「全部寝かせ型」 4パターン [ガイドあり]" onClick="gButton='section6'">
+        <input type="button" value="6  «Todo acostado» 4 patrones [Con guía]" onClick="gButton='section6'">
         <img src="img/clear.png" class="clear" id="clear5"><br>
 
-        <input type="button" value="7  「全部寝かせ型」 20問" onClick="gButton='section7'">
+        <input type="button" value="7  «Todo acostado» 20 preguntas" onClick="gButton='section7'">
         <img src="img/clear.png" class="clear" id="clear6"><br>
 
-        <input type="button" value="8  「IILO型」 2パターン [ガイドあり]" onClick="gButton='section8'">
+        <input type="button" value="8  «Tipo IILO» 2 patrones [Con guía]" onClick="gButton='section8'">
         <img src="img/clear.png" class="clear" id="clear7"><br>
 
-        <input type="button" value="9  「IILO型」 10問" onClick="gButton='section9'">
+        <input type="button" value="9  «Tipo IILO» 10 preguntas" onClick="gButton='section9'">
         <img src="img/clear.png" class="clear" id="clear8"><br>
 
-        <input type="button" value="10 「初手Iミノ3段目型」 3パターン [ガイドあり]" onClick="gButton='section10'">
+        <input type="button" value="10 «Primer movimiento I en la tercera línea» 3 patrones [Con guía]" onClick="gButton='section10'">
         <img src="img/clear.png" class="clear" id="clear9"><br>
 
-        <input type="button" value="11 「初手Iミノ3段目型」 20問" onClick="gButton='section11'">
+        <input type="button" value="11 «Primer movimiento I en la tercera línea» 20 preguntas" onClick="gButton='section11'">
         <img src="img/clear.png" class="clear" id="clear10"><br>
 
       </p>
 
       <p>
-        Iミノ横置きのまとめ<br>
-        <input type="button" value="12  中間テスト 20問" onClick="gButton='section12'">
+        Resumen de la pieza I horizontal<br>
+        <input type="button" value="12  Examen intermedio 20 preguntas" onClick="gButton='section12'">
         <img src="img/clear.png" class="clear" id="clear11"><br>
       </p>
 
       <p>
-        ここまで覚えられれば、パーフェクトクリアが可能なツモ711通りの内、<br>
-        710通りを覚えられたことになります。<br>
-        余力のある方は最後の1通りとなる「LSIO型」も学習してみてください。<br>
+        Si has llegado hasta aquí, habrás aprendido 710 de las 711 secuencias posibles para lograr un Perfect Clear.<br>
+        Si tienes energía, aprende la última secuencia, el «Tipo LSIO».<br>
       </p>
 
       <p>
-        LSIO型 84.6％<br>
-        <input type="button" value="13 「LSIO型」 全1パターン [ガイドあり]" onClick="gButton='section13'">
+        Tipo LSIO 84.6％<br>
+        <input type="button" value="13 «Tipo LSIO» 1 patrón [Con guía]" onClick="gButton='section13'">
         <img src="img/clear.png" class="clear" id="clear12"><br>
 
-        <input type="button" value="14 「LSIO型」 12問" onClick="gButton='section14'">
+        <input type="button" value="14 «Tipo LSIO» 12 preguntas" onClick="gButton='section14'">
         <img src="img/clear.png" class="clear" id="clear13"><br>
 
       </p>
 
       <p>
-        まとめ<br>
-        <input type="button" value="15 期末テスト 30問" onClick="gButton='section15'">
+        Resumen<br>
+        <input type="button" value="15  Examen final 30 preguntas" onClick="gButton='section15'">
         <img src="img/clear.png" class="clear" id="clear14"><br>
 
-        <input type="button" value="16 卒業テスト（ミラー問題を含む） 100問" onClick="gButton='section16'">
+        <input type="button" value="16  Examen de graduación (incluye problemas espejo) 100 preguntas" onClick="gButton='section16'">
         <img src="img/clear.png" class="clear" id="clear15"><br>
 
       </p>
       <p>
-        おまけ<br>
-        <input type="button" value="17 そのほかの消し方" onClick="gButton='section17'">
+        Extra<br>
+        <input type="button" value="17  Otras formas de eliminar líneas" onClick="gButton='section17'">
         <img src="img/clear.png" class="clear" id="clear16"><br>
 
-        <input type="button" value="18 「Iミノ縦置き」 全514問" onClick="gButton='section18'">
+        <input type="button" value="18 «Pieza I vertical» 514 preguntas" onClick="gButton='section18'">
         <img src="img/clear.png" class="clear" id="clear17"><br>
 
-        <input type="button" value="19 「Iミノ横置き」 全196問" onClick="gButton='section19'">
+        <input type="button" value="19 «Pieza I horizontal» 196 preguntas" onClick="gButton='section19'">
         <img src="img/clear.png" class="clear" id="clear18"><br>
 
-        <input type="button" value="20 全711問" onClick="gButton='section20'">
+        <input type="button" value="20  Todas las 711 preguntas" onClick="gButton='section20'">
         <img src="img/clear.png" class="clear" id="clear19"><br>
 
-        <input type="button" value="21 全711問ミラー" onClick="gButton='section21'">
+        <input type="button" value="21  Todas las 711 preguntas (espejo)" onClick="gButton='section21'">
         <img src="img/clear.png" class="clear" id="clear20"><br>
       </p>
 
       <p>
-        ■作成者<br>
+        ■Creador<br>
         <a href="https://form1ssl.fc2.com/form/?id=685fca71e208118a">chokotia</a><br>
       </p>
       <p>
-        ■参考サイト<br>
-        <a href="http://taninkona.web.fc2.com/ttt/">テトリス トレーナー トレビアン</a><br>
-        <a href="https://docs.google.com/spreadsheets/d/1bVY3t_X96xRmUL0qdgB9tViSIGenu6RMKX4RW7qWg8Y/edit#gid=376091749">テトリス　パフェテンプレ成功率</a><br>
-        <a href="http://waka.nu/tetris/">喜竹屋本舗</a><br>
+        ■Sitios de referencia<br>
+        <a href="http://taninkona.web.fc2.com/ttt/">Tetris Trainer Trevian</a><br>
+        <a href="https://docs.google.com/spreadsheets/d/1bVY3t_X96xRmUL0qdgB9tViSIGenu6RMKX4RW7qWg8Y/edit#gid=376091749">Tasas de éxito de plantillas de Perfect Clear en Tetris</a><br>
+        <a href="http://waka.nu/tetris/">Tienda principal de Kichikuya</a><br>
         <a href="http://harddrop.com/wiki/Main_Page">Hard Drop Wiki</a><br>
-        <a href="http://www46.atwiki.jp/tojkazuto/">テトリス攻略・大会情報集積所</a><br>
-        <a href="http://www59.atwiki.jp/tetple/pages/1.html">テトリステンプレ技まとめ</a><br>
+        <a href="http://www46.atwiki.jp/tojkazuto/">Recopilación de información y estrategias de Tetris</a><br>
+        <a href="http://www59.atwiki.jp/tetple/pages/1.html">Resumen de técnicas de plantillas de Tetris</a><br>
       </p>
       <p>
-      ■無料『テトリス』で遊んでみる！<br>
+      ■¡Juega Tetris gratis!<br>
       <a href="http://www.tetrisfriends.com/">Tetris Friends</a><br>
-      <a href="http://www.nicovideo.jp/watch/sm16847148">テトリスフレンズの始め方！(ニコニコ動画)</a><br>
-      <a href="http://www.geocities.jp/teto_kozo/">テトフレ小僧 (『Tetris Friends』の始め方＆遊び方解説)</a><br>
+      <a href="http://www.nicovideo.jp/watch/sm16847148">Cómo empezar en Tetris Friends (video de NicoNico)</a><br>
+      <a href="http://www.geocities.jp/teto_kozo/">Teto Kozou (Guía para empezar y jugar Tetris Friends)</a><br>
       </p>
     </div>
     <div id="list_problems" class="layer">
@@ -165,11 +163,11 @@
         <input type="button" id="prob1" value="" onClick="gButton='problem2'"><br>
       </p>
       <p>
-        <input type="button" value="←前" onClick="gButton='previous'">　
-        <input type="button" value="次→" onClick="gButton='next'">
+        <input type="button" value="←Anterior" onClick="gButton='previous'">　
+        <input type="button" value="Siguiente→" onClick="gButton='next'">
       </p>
       <p>
-        <input type="button" value="最初の画面に戻る" onClick="gButton='back'">
+        <input type="button" value="Volver a la pantalla inicial" onClick="gButton='back'">
       </p>
     </div>
 
@@ -279,7 +277,7 @@
         </td>
         <td style="padding-left: 16px">
           <p>
-            <input type="button" value="問題選択に戻る" onClick="gButton='back'" style="width: 160px; height: 30px;"><br>
+            <input type="button" value="Volver a la selección de problemas" onClick="gButton='back'" style="width: 160px; height: 30px;"><br>
             <textarea type="text" id="perform_hint" style="width: 288px; height: 96px;"></textarea>
           </p>
           <p class="small">
@@ -344,7 +342,7 @@
 
       <div id="preferences" class="layer">
         <p>
-          左移動・・・・・・ <select id="key_left">
+          Movimiento izquierdo・・・・・・ <select id="key_left">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -376,7 +374,7 @@
             <option value="Left">←</option><option value="Right">→</option>
             <option value="Down">↓</option>
           </select><br>
-          右移動・・・・・・ <select id="key_right">
+          Movimiento derecho・・・・・・ <select id="key_right">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -408,7 +406,7 @@
             <option value="Left">←</option><option value="Right">→</option>
             <option value="Down">↓</option>
           </select><br>
-          ソフトドロップ・・ <select id="key_softdrop">
+          Caída suave・・ <select id="key_softdrop">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -440,7 +438,7 @@
             <option value="Left">←</option><option value="Right">→</option>
             <option value="Down">↓</option>
           </select><br>
-          ハードドロップ・・ <select id="key_harddrop">
+          Caída rápida・・ <select id="key_harddrop">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -472,7 +470,7 @@
             <option value="Left">←</option><option value="Right">→</option>
             <option value="Down">↓</option>
           </select><br>
-          右回転・・・・・・ <select id="key_rot_right">
+          Rotación derecha・・・・・・ <select id="key_rot_right">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -504,7 +502,7 @@
             <option value="Left">←</option><option value="Right">→</option>
             <option value="Down">↓</option>
           </select><br>
-          左回転・・・・・・ <select id="key_rot_left">
+          Rotación izquierda・・・・・・ <select id="key_rot_left">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -536,7 +534,7 @@
             <option value="Left">←</option><option value="Right">→</option>
             <option value="Down">↓</option>
           </select><br>
-          ホールド・・・・・ <select id="key_hold">
+          Hold・・・・・ <select id="key_hold">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -568,7 +566,7 @@
             <option value="Left">←</option><option value="Right">→</option>
             <option value="Down">↓</option>
           </select><br>
-          ガイドの利用・・・ <select id="key_guide">
+          Uso de la guía・・・ <select id="key_guide">
             <option value="0">0</option><option value="1">1</option><option value="2">2</option>
             <option value="3">3</option><option value="4">4</option><option value="5">5</option>
             <option value="6">6</option><option value="7">7</option><option value="8">8</option>
@@ -602,7 +600,7 @@
           </select><br>
         </p>
         <input type="button" value="OK" onClick="gButton='ok'">
-        <input type="button" value="キャンセル" onClick="gButton='cancel'">
+        <input type="button" value="Cancelar" onClick="gButton='cancel'">
       </div>
 
     </form>
